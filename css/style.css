@@ -1,0 +1,248 @@
+.wrapper {
+  max-width: 766px;
+  padding: 50px 15px;
+  margin: 0 auto;
+}
+.tab-nav {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.tab-nav label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border: 1px solid rgb(127, 127, 127);
+  border-radius: 5px;
+  width: 144px;
+  height: 40px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.tab-nav label:hover {
+  background-color: #d7d7d7;
+}
+.tab-nav label.active {
+  background-color: rgb(52, 152, 219);
+  color: white;
+}
+.tab-nav label span {
+  font-size: 19px;
+  font-weight: bold;
+}
+.tab-nav label input {
+  display: none;
+}
+.tab-sec {
+  display: none;
+}
+.tab-sec.active {
+  display: block;
+}
+.notice {
+  display: flex;
+  gap: 10px;
+  margin: 50px 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333;
+}
+.notice svg {
+  flex-shrink: 0;
+}
+.content {
+  margin: 50px 0;
+  /* border: 1px solid red; */
+}
+.content-tit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgb(69, 69, 69);
+}
+.content-tit h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #7f7f7f;
+}
+.content-tit .dowload-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #333;
+}
+.content .step-box {
+  padding: 20px 30px;
+  border: 1px solid #c6c6c6;
+  border-radius: 4px;
+  box-shadow: rgb(0 0 0 / 8%) 0px 1px 11px 2px inset;
+}
+.content .step-box ol {
+  display: flex;
+  flex-direction: column;
+}
+.content .step-box li {
+  padding: 10px 0;
+}
+.content .step-box ol.half {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.content .step-box ol.half li:nth-child(2n-1) {
+  margin-right: 20px;
+}
+.content .step-box ol.half li {
+  width: calc(50% - 10px);
+}
+.content .step-box li h3 {
+  font-size: 21px;
+  font-weight: bolder;
+  color: #7f7f7f;
+}
+.content .step-box li p {
+  font-size: 18px;
+  line-height: 26px;
+  margin: 8px 0 10px 69px;
+  color: #7f7f7f;
+}
+.content .question-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.content .question-list li:nth-child(2n-1) {
+  margin-right: 20px;
+}
+.content .question-list li {
+  width: calc(50% - 10px);
+  padding: 5px 0;
+  font-size: 13px;
+}
+.content .question-list li::before {
+  content: 'Q.';
+  display: inline;
+  font-weight: bold;
+}
+.content .card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+}
+.content .card-list .card-container {
+  width: 181px;
+  margin-bottom: 20px;
+}
+.content .card-list .card-container > a {
+  display: inline-block;
+  width: 100%;
+}
+.content .card-list .card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 115px;
+  width: 100%;
+  border-radius: 4px;
+  background-color: rgb(127, 127, 127);
+  transition: 0.3s;
+}
+.content .card-list .card:hover {
+  transform: translateY(-6%);
+}
+.content .card-list .card .exclamation-mark {
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+}
+.content .card-list .card .exclamation-mark svg {
+  width: 100%;
+}
+.content .card-list .card .card-tit {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 17px;
+  text-align: center;
+  word-wrap: break-word;
+  word-break: keep-all;
+  color: #fff;
+}
+.content .card-list .card-desc {
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 16px;
+  word-wrap: break-word;
+  word-break: keep-all;
+}
+
+.content .card-list .card[data-color='dark-grey'] {
+  background-color: rgb(94, 94, 94);
+}
+.content .card-list .card[data-color='dark-grey']:hover {
+  background-color: rgb(55, 55, 55);
+}
+.content .card-list .card[data-color='sky'] {
+  background-color: rgb(52, 152, 219);
+}
+.content .card-list .card[data-color='sky']:hover {
+  background-color: rgb(26, 127, 194);
+}
+.content .card-list .card[data-color='purple'] {
+  background-color: rgb(155, 89, 182);
+}
+.content .card-list .card[data-color='purple']:hover {
+  background-color: rgb(129, 45, 162);
+}
+.content .card-list .card[data-color='orange'] {
+  background-color: rgb(243, 156, 18);
+}
+.content .card-list .card[data-color='orange']:hover {
+  background-color: rgb(225, 120, 0);
+}
+.content .card-list .card[data-color='grey'] {
+  background-color: rgb(127, 127, 127);
+}
+.content .card-list .card[data-color='grey']:hover {
+  background-color: rgb(116, 116, 116);
+}
+.content .card-list .card[data-color='green'] {
+  background-color: rgb(22, 160, 133);
+}
+.content .card-list .card[data-color='green']:hover {
+  background-color: rgb(16, 130, 107);
+}
+.content .card-list .card[data-color='yellow'] {
+  background-color: rgb(241, 196, 15);
+}
+.content .card-list .card[data-color='yellow']:hover {
+  background-color: rgb(255, 191, 16);
+}
+.content .card-list .card[data-color='light-grey'] {
+  background-color: rgb(190, 190, 190);
+}
+.content .card-list .card[data-color='light-grey']:hover {
+  background-color: rgb(160, 160, 160);
+}
+.content .card-list .card[data-color='light-sky'] {
+  background-color: rgb(144, 197, 231);
+}
+.content .card-list .card[data-color='light-sky']:hover {
+  background-color: rgb(116, 182, 223);
+}
+.content .card-list .card[data-color='red'] {
+  background-color: rgb(192, 57, 43);
+}
+.content .card-list .card[data-color='red']:hover {
+  background-color: rgb(170, 24, 8);
+}
+.content .card-list .card[data-color='teal'] {
+  background-color: rgb(59, 160, 166);
+}
+.content .card-list .card[data-color='teal']:hover {
+  background-color: rgb(36, 139, 144);
+}
