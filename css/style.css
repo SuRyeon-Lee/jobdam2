@@ -1,5 +1,5 @@
 .wrapper {
-  max-width: 766px;
+  max-width: 850px;
   padding: 50px 15px;
   margin: 0 auto;
 }
@@ -118,7 +118,8 @@
 .content .question-list li {
   width: calc(50% - 10px);
   padding: 5px 0;
-  font-size: 13px;
+  font-size: 14px;
+  line-height: 18px;
 }
 .content .question-list li::before {
   content: 'Q.';
@@ -128,10 +129,11 @@
 .content .card-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 13px;
+  gap: 10px;
 }
 .content .card-list .card-container {
-  width: 181px;
+  width: 24%;
+  min-width: 120px;
   margin-bottom: 20px;
 }
 .content .card-list .card-container > a {
@@ -143,7 +145,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 115px;
+  height: 122px;
   width: 100%;
   border-radius: 4px;
   background-color: rgb(127, 127, 127);
@@ -164,7 +166,7 @@
   width: 100%;
 }
 .content .card-list .card .card-tit {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
   line-height: 17px;
   text-align: center;
@@ -174,8 +176,8 @@
 }
 .content .card-list .card-desc {
   margin-top: 10px;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 13px;
+  line-height: 17px;
   word-wrap: break-word;
   word-break: keep-all;
 }
