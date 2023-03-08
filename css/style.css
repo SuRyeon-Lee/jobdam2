@@ -1,6 +1,32 @@
+header {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  height: 55px;
+  width: 100%;
+  border-bottom: 1px solid #c6c6c6;
+  background-color: #fff;
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  max-width: 870px;
+  height: 100%;
+  margin: 0 auto;
+}
+.logo {
+  display: inline-block;
+  padding: 10px;
+}
+.logo path {
+  transition: 0.2s;
+}
+.logo:hover path {
+  fill: rgb(52, 152, 219);
+}
 .wrapper {
   max-width: 850px;
-  padding: 50px 15px;
+  padding: 85px 15px 50px 15px;
   margin: 0 auto;
 }
 .tab-nav {
@@ -53,7 +79,6 @@
 }
 .content {
   margin: 50px 0;
-  /* border: 1px solid red; */
 }
 .content-tit {
   display: flex;
